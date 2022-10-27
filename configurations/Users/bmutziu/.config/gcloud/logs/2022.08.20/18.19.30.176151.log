@@ -1,0 +1,83 @@
+2022-08-20 18:19:30,183 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-20 18:19:30,248 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2022-08-20 18:19:30,249 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "cilium-20220820000618", --zone: "europe-north1-a", [USER@]INSTANCE: "gke-bmutziu-14804-default-pool-c5809a29-wv8r"]
+2022-08-20 18:19:30,391 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 18:19:30,732 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 18:19:30,793 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 18:19:31,656 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 18:19:31,665 DEBUG    root            OS Login Enabled: False
+Security Keys Enabled: False
+Username: bmutziu
+SSH Security Key Support: None
+Environment: None
+Security Keys:
+
+
+2022-08-20 18:19:31,666 DEBUG    root            Current SSH keys in project: []
+2022-08-20 18:19:31,667 INFO     ___FILE_ONLY___ Updating project ssh metadata...
+2022-08-20 18:19:31,672 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 18:19:32,459 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 18:19:32,466 DEBUG    root            Operations to inspect: [<Operation
+ id: 1097911042675918187
+ insertTime: '2022-08-20T08:19:32.217-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661008771955-5e6adbdd23b4d-3205d1a5-106b2547'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661008771955-5e6adbdd23b4d-3205d1a5-106b2547'
+ startTime: '2022-08-20T08:19:32.246-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 266622789771
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-20 18:19:32,472 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 18:19:43,724 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 18:19:43,729 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2022-08-20T08:19:43.176-07:00'
+ id: 1097911042675918187
+ insertTime: '2022-08-20T08:19:32.217-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661008771955-5e6adbdd23b4d-3205d1a5-106b2547'
+ operationType: 'compute.projects.setCommonInstanceMetadata'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661008771955-5e6adbdd23b4d-3205d1a5-106b2547'
+ startTime: '2022-08-20T08:19:32.246-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 266622789771
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-20 18:19:43,730 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/cilium-20220820000618].
+
+2022-08-20 18:19:43,735 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 18:19:44,440 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 18:19:44,532 INFO     ___FILE_ONLY___ Waiting for SSH key to propagate.
+
+2022-08-20 18:19:44,534 DEBUG    root            Running command [/usr/bin/ssh -T -i /Users/bmutziu/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.2726526009543054486 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/Users/bmutziu/.ssh/google_compute_known_hosts bmutziu@34.88.229.14 -- :].
+2022-08-20 18:19:44,535 DEBUG    root            Executing command: ['/usr/bin/ssh', '-T', '-i', '/Users/bmutziu/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HashKnownHosts=no', '-o', 'HostKeyAlias=compute.2726526009543054486', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=no', '-o', 'UserKnownHostsFile=/Users/bmutziu/.ssh/google_compute_known_hosts', 'bmutziu@34.88.229.14', '--', ':']
+2022-08-20 18:20:59,571 DEBUG    root            (gcloud.compute.ssh) Could not SSH into the instance.  It is possible that your SSH key has not propagated to the instance yet. Try running this command again.  If you still cannot connect, verify that the firewall and instance are set to accept ssh traffic.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/compute/ssh.py", line 412, in Run
+    poller.Poll(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/ssh/ssh.py", line 1780, in Poll
+    self._retryer.RetryOnException(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 197, in RetryOnException
+    result, exc_info = self.RetryOnResult(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 256, in RetryOnResult
+    self._RaiseIfStop(result, state)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 118, in _RaiseIfStop
+    raise WaitException('Timeout', result, state)
+googlecloudsdk.core.util.retry.WaitException: last_result=(None, (<class 'googlecloudsdk.command_lib.util.ssh.ssh.CommandError'>, CommandError('[/usr/bin/ssh] exited with return code [255].'), <traceback object at 0x11070c5c0>)), last_retrial=0, time_passed_ms=75036,time_to_wait=5000
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/compute/ssh.py", line 416, in Run
+    raise ssh_utils.NetworkError()
+googlecloudsdk.command_lib.compute.ssh_utils.NetworkError: Could not SSH into the instance.  It is possible that your SSH key has not propagated to the instance yet. Try running this command again.  If you still cannot connect, verify that the firewall and instance are set to accept ssh traffic.
+2022-08-20 18:20:59,578 ERROR    root            (gcloud.compute.ssh) Could not SSH into the instance.  It is possible that your SSH key has not propagated to the instance yet. Try running this command again.  If you still cannot connect, verify that the firewall and instance are set to accept ssh traffic.

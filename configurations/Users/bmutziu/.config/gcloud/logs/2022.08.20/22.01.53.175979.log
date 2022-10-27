@@ -1,0 +1,43 @@
+2022-08-20 22:01:53,183 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-20 22:01:53,192 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2022-08-20 22:01:53,194 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "cilium-20220820000618", --zone: "europe-north1-a", [USER@]INSTANCE: "gke-bmutziu-14804-default-pool-c5809a29-wv8r"]
+2022-08-20 22:01:53,293 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 22:01:53,694 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 22:01:53,761 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 22:01:54,389 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 22:01:54,399 DEBUG    root            OS Login Enabled: False
+Security Keys Enabled: False
+Username: bmutziu
+SSH Security Key Support: None
+Environment: None
+Security Keys:
+
+
+2022-08-20 22:01:54,399 DEBUG    root            Current SSH keys in project: ['bmutziu:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDQvS+wSlIUN8URNmHnmwn2XizyakP2gHHJAwaoD/6srqRKxkQpUr32WbULxLuGrAOs/ShyX6hK5d4R6fNFPatjXJVElC2s1oFZJDboiUekJim+qt+igaxz2xK621W2uk1WFj+zz/8by7n+EEx3cn+zlUEQEhlvI9Yhg8thV9qWP1jQQ8dtNyo6cdfKo6TK61/BDKaBNaF1cOt+bX6Gql5Gw5VwQ1LiN7TMVzFuJgPDjZsW5+R7LOhMraIrOAITwT03qgeKXo40eJuRPG+QmGExQcNep0Oxq/J+S//LKs+yoKRY+IOdY3CNUyUX+Ahi/UAW8M3NtE4eIgJOBxE3PiCCg5GP4FRoj+bk7MrhJ+ksHpMeQ4Bol/cWEpMWsiHn4eS83MrQKFCUIPTMA7yb/lex96uf81yg3sKgqfTrggkPE3T+Bu6Pukm39PvGa5MxBGDcX4WDMIa4A7KkHQnoNZ1Dv+qvlt3vGeZ6TjHRobd86D2nnB8aZEPawhOfvbY4B3U= bmutziu@MBP-Bogdan']
+2022-08-20 22:01:54,400 DEBUG    root            Running command [/usr/bin/ssh -t -i /Users/bmutziu/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.2726526009543054486 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/Users/bmutziu/.ssh/google_compute_known_hosts bmutziu@34.88.229.14].
+2022-08-20 22:01:54,400 DEBUG    root            Executing command: ['/usr/bin/ssh', '-t', '-i', '/Users/bmutziu/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HashKnownHosts=no', '-o', 'HostKeyAlias=compute.2726526009543054486', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=yes', '-o', 'UserKnownHostsFile=/Users/bmutziu/.ssh/google_compute_known_hosts', 'bmutziu@34.88.229.14']
+2022-08-21 06:08:48,478 INFO     ___FILE_ONLY___ 
+Recommendation: To check for possible causes of SSH connectivity issues and get
+recommendations, rerun the ssh command with the --troubleshoot option.
+
+gcloud compute ssh gke-bmutziu-14804-default-pool-c5809a29-wv8r --project=cilium-20220820000618 --zone=europe-north1-a --troubleshoot
+
+Or, to investigate an IAP tunneling issue:
+
+gcloud compute ssh gke-bmutziu-14804-default-pool-c5809a29-wv8r --project=cilium-20220820000618 --zone=europe-north1-a --troubleshoot --tunnel-through-iap
+
+
+2022-08-21 06:08:48,480 DEBUG    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/compute/ssh.py", line 431, in Run
+    raise e
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/compute/ssh.py", line 424, in Run
+    return_code = cmd.Run(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/ssh/ssh.py", line 1541, in Run
+    raise CommandError(args[0], return_code=status)
+googlecloudsdk.command_lib.util.ssh.ssh.CommandError: [/usr/bin/ssh] exited with return code [255].
+2022-08-21 06:08:48,484 ERROR    root            (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].

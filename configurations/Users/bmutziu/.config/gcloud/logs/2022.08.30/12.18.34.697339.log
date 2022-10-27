@@ -1,0 +1,26 @@
+2022-08-30 12:18:34,698 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-30 12:18:34,698 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2022-08-30 12:18:34,699 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2022-08-30 12:18:34,702 INFO     root            Display format: "default json"
+2022-08-30 12:18:34,702 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "bmutziu@gmail.com",
+        "disable_usage_reporting": "True",
+        "project": "cilium-20220820000618"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AVA9y1v553kBMarrrPBTKnZ19uCsuek8DQ1CldBFBAc07FiEizl8rBWzyHXnmpt6xNjPLJb9WirQ7pRRtQLIvEYEmgD9OxGGAZMIEvqWpL8c83c4jdYQFqN4aw0DZnXDZ57TaHBcrF9CDS1unutLcOyNWDUEgZ5kE7Tj3QaCgYKATASAQASFQE65dr8C7q_O_eWtUwQ5OFoI0iw7A0173",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjQwMmYzMDViNzA1ODEzMjlmZjI4OWI1YjNhNjcyODM4MDZlY2E4OTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAwODI0ODY0NDMxNzM0OTUyNjI1IiwiZW1haWwiOiJibXV0eml1QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoibmw4ZGd6dTZEZThzXzJxcE42OWFPQSIsImlhdCI6MTY2MTg0ODcxNCwiZXhwIjoxNjYxODUyMzE0fQ.O_ISw2Al78qGYlelqCJgh70HmpWzBTeOfbsPVVyT9bddTKz8H8ms9XTb0yL_cf_-QaIvlrHzDcheqcHhaj-Y79LbvgkMSxWIyLBlCOY125GfJ1x3FN_RBgytTOQbBhVkrpg6h7NayuKJRfycNkeIDJs92Xd1n9hvb8FD1G5p6O0_EVqLEmv15prSKar5o9AOP_vQLwUIzUS50tLPoEAZwklpqFwFo89KzadqYFYMV3uqRns9swcjNXDwMF_sJSGxIg6AT716hS6pRmuG6s7bMZVK_gmSGRFQvQP8qfNB7mfY1yhawnCOAmkjmI6zEC83Ui7wnZJB8dJMF1__J7WR4Q",
+    "token_expiry": "2022-08-30T09:38:33Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/bmutziu/.config/gcloud/config_sentinel"
+  }
+}
+2022-08-30 12:18:34,702 INFO     ___FILE_ONLY___ 
+

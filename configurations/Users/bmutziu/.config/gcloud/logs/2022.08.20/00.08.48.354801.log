@@ -1,0 +1,27 @@
+2022-08-20 00:08:48,355 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2022-08-20 00:08:48,355 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2022-08-20 00:08:48,356 DEBUG    root            Running [gcloud.projects.list] with arguments: []
+2022-08-20 00:08:48,356 INFO     root            client_filter="None" server_filter="None"
+2022-08-20 00:08:48,361 INFO     root            Display format: "
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+"
+2022-08-20 00:08:48,366 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2022-08-20 00:08:49,415 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=500 HTTP/1.1" 200 None
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___ PROJECT_ID
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___              
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___ NAME
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___                    
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___ PROJECT_NUMBER
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___ 
+
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___ cilium-20220820000618
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___   
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___ cilium-20220820000618
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___   
+2022-08-20 00:08:49,423 INFO     ___FILE_ONLY___ 266622789771
+2022-08-20 00:08:49,424 INFO     ___FILE_ONLY___ 
+

@@ -1,0 +1,23 @@
+2022-08-20 17:37:24,785 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-20 17:37:24,786 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall_rules']
+2022-08-20 17:37:24,789 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'list']
+2022-08-20 17:37:24,790 DEBUG    root            Running [gcloud.compute.firewall-rules.list] with arguments: [--filter: "name~gke-${CLUSTER1}-.*-all"]
+2022-08-20 17:37:24,843 INFO     root            client_filter=None server_filter='name eq ".*(gke-${CLUSTER1}-.*-all).*"'
+2022-08-20 17:37:24,843 INFO     root            client_filter=None server_filter='name eq ".*(gke-${CLUSTER1}-.*-all).*"'
+2022-08-20 17:37:24,844 INFO     root            Display format: "    table(
+      name,
+      network.basename(),
+      direction,
+      priority,
+      allowed[].map().firewall_rule().list():label=ALLOW,
+      denied[].map().firewall_rule().list():label=DENY,
+      disabled
+    )"
+2022-08-20 17:37:24,849 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 17:37:25,504 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 17:37:25,512 INFO     root            cache collection=compute.firewalls api_version=v1 params=['project', 'firewall']
+2022-08-20 17:37:25,550 INFO     ___FILE_ONLY___ 
+To show all fields of the firewall, please show in JSON format: --format=json
+To show all fields in table format, please see the examples in --help.
+
+

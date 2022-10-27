@@ -1,0 +1,112 @@
+2022-08-30 21:53:17,343 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-30 21:53:17,344 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'resize']
+2022-08-30 21:53:17,353 DEBUG    root            Running [gcloud.container.clusters.resize] with arguments: [--node-pool: "default-pool", --num-nodes: "0", --zone: "europe-central2-a", NAME: "bmutziu-11988"]
+2022-08-30 21:53:17,509 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:53:18,108 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/clusters/bmutziu-11988?alt=json HTTP/1.1" 200 None
+2022-08-30 21:53:20,959 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:53:24,017 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "POST /v1/projects/cilium-20220820000618/locations/europe-central2-a/clusters/bmutziu-11988/nodePools/default-pool:setSize?alt=json HTTP/1.1" 200 None
+2022-08-30 21:53:24,023 INFO     ___FILE_ONLY___ Resizing bmutziu-11988...
+2022-08-30 21:53:24,027 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:53:24,477 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:53:29,496 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:53:30,003 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:53:35,016 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:53:35,505 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:53:40,520 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:53:41,075 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:53:46,090 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:53:46,682 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:53:51,697 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:53:52,178 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:53:57,195 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:53:57,694 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:02,711 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:03,152 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:08,161 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:08,637 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:13,651 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:14,306 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:19,315 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:19,811 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:24,827 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:25,616 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:30,629 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:31,121 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:36,131 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:36,868 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:41,883 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:42,576 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:47,585 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:48,025 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:53,033 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:53,519 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:54:58,536 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:54:58,978 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:04,004 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:04,542 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:09,556 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:10,103 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:15,117 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:15,593 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:20,608 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:21,211 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:26,232 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:26,646 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:31,662 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:32,280 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:37,292 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:37,750 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:42,763 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:43,290 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:48,309 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:48,795 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:53,803 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:54,218 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:55:59,233 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:55:59,815 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:04,833 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:05,294 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:10,314 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:10,805 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:15,830 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:16,257 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:21,277 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:21,697 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:26,714 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:27,201 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:32,221 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:32,790 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:37,809 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:38,523 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:43,541 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:44,144 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:49,164 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:49,750 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:56:54,769 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:56:55,282 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:57:00,301 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:57:00,950 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:57:05,973 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:57:06,788 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:57:11,803 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:57:12,221 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:57:17,235 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:57:17,751 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:57:22,770 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:57:23,346 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:57:28,363 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 21:57:29,006 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661885604107-727fc295?alt=json HTTP/1.1" 200 None
+2022-08-30 21:57:29,012 INFO     root            Operation <Operation
+ clusterConditions: []
+ endTime: '2022-08-30T18:57:28.026415052Z'
+ name: 'operation-1661885604107-727fc295'
+ nodepoolConditions: []
+ operationType: OperationTypeValueValuesEnum(SET_NODE_POOL_SIZE, 14)
+ selfLink: 'https://container.googleapis.com/v1/projects/266622789771/zones/europe-central2-a/operations/operation-1661885604107-727fc295'
+ startTime: '2022-08-30T18:53:24.10794094Z'
+ status: StatusValueValuesEnum(DONE, 3)
+ targetLink: 'https://container.googleapis.com/v1/projects/266622789771/zones/europe-central2-a/clusters/bmutziu-11988/nodePools/default-pool'
+ zone: 'europe-central2-a'> succeeded after 244.988 seconds
+2022-08-30 21:57:29,116 INFO     ___FILE_ONLY___ Updated [https://container.googleapis.com/v1/projects/cilium-20220820000618/zones/europe-central2-a/clusters/bmutziu-11988].
+
+2022-08-30 21:57:29,119 INFO     root            Display format: "default"

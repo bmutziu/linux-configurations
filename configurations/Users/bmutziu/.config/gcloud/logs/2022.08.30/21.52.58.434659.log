@@ -1,0 +1,18 @@
+2022-08-30 21:52:58,437 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-30 21:52:58,438 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'resize']
+2022-08-30 21:52:58,529 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2022-08-30 21:52:58,690 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-08-30 21:52:59,099 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-08-30 21:52:59,126 DEBUG    root            Running [gcloud.container.clusters.resize] with arguments: [--node-pool: "default-pool", --num-nodes: "0", NAME: "bmutziu-11988"]
+2022-08-30 21:52:59,126 DEBUG    root            (gcloud.container.clusters.resize) One of [--zone, --region] must be supplied: Please specify location.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/resize.py", line 71, in Run
+    location = location_get(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/command_lib/container/container_command_util.py", line 242, in GetZoneOrRegion
+    raise calliope_exceptions.MinimumArgumentException(
+googlecloudsdk.calliope.exceptions.MinimumArgumentException: One of [--zone, --region] must be supplied: Please specify location.
+2022-08-30 21:52:59,128 ERROR    root            (gcloud.container.clusters.resize) One of [--zone, --region] must be supplied: Please specify location.

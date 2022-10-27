@@ -1,0 +1,9 @@
+2022-08-19 11:05:00,838 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 11:05:00,839 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2022-08-19 11:05:00,840 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'create']
+2022-08-19 11:05:00,840 DEBUG    root            Running [gcloud.config.configurations.create] with arguments: [CONFIGURATION_NAME: "default"]
+2022-08-19 11:05:00,840 INFO     ___FILE_ONLY___ Created [default].
+
+2022-08-19 11:05:00,841 INFO     ___FILE_ONLY___ Activated [default].
+
+2022-08-19 11:05:00,841 INFO     root            Display format: "none"

@@ -1,0 +1,41 @@
+2022-08-20 17:04:50,913 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-20 17:04:50,915 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'create']
+2022-08-20 17:04:50,935 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--cluster-ipv4-cidr: "10.10.0.0/16", --enable-ip-alias: "True", --network: "bmutziu-14804-cluster-net", --node-taints: "OrderedDict([('node.cilium.io/agent-not-ready', 'true:NoExecute')])", --region: "europe-north1", --services-ipv4-cidr: "10.100.0.0/16", --subnetwork: "bmutziu-14804-node-subnet", NAME: "bmutziu-14804"]
+2022-08-20 17:04:50,937 INFO     ___FILE_ONLY___ Note: The Pod address range limits the maximum size of the cluster. Please refer to https://cloud.google.com/kubernetes-engine/docs/how-to/flexible-pod-cidr to learn how to optimize IP address allocation.
+
+2022-08-20 17:04:50,941 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-20 17:04:55,490 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "POST /v1/projects/cilium-20220820000618/locations/europe-north1/clusters?alt=json HTTP/1.1" 403 None
+2022-08-20 17:04:55,495 DEBUG    root            (gcloud.container.clusters.create) ResponseError: code=403, message=Insufficient regional quota to satisfy request: resource "IN_USE_ADDRESSES": request requires '9.0' and is short '1.0'. project has a quota of '8.0' with '8.0' available. View and manage quotas at https://console.cloud.google.com/iam-admin/quotas?usage=USED&project=cilium-20220820000618.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/create.py", line 1142, in Run
+    operation_ref = adapter.CreateCluster(cluster_ref, options)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 2235, in CreateCluster
+    operation = self.client.projects_locations_clusters.Create(req)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/third_party/apis/container/v1/container_v1_client.py", line 493, in Create
+    return self._RunMethod(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://container.googleapis.com/v1/projects/cilium-20220820000618/locations/europe-north1/clusters?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 20 Aug 2022 14:04:55 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "Insufficient regional quota to satisfy request: resource \"IN_USE_ADDRESSES\": request requires '9.0' and is short '1.0'. project has a quota of '8.0' with '8.0' available. View and manage quotas at https://console.cloud.google.com/iam-admin/quotas?usage=USED&project=cilium-20220820000618.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/create.py", line 1153, in Run
+    raise exceptions.HttpException(error, util.HTTP_ERROR_FORMAT)
+googlecloudsdk.calliope.exceptions.HttpException: ResponseError: code=403, message=Insufficient regional quota to satisfy request: resource "IN_USE_ADDRESSES": request requires '9.0' and is short '1.0'. project has a quota of '8.0' with '8.0' available. View and manage quotas at https://console.cloud.google.com/iam-admin/quotas?usage=USED&project=cilium-20220820000618.
+2022-08-20 17:04:55,498 ERROR    root            (gcloud.container.clusters.create) ResponseError: code=403, message=Insufficient regional quota to satisfy request: resource "IN_USE_ADDRESSES": request requires '9.0' and is short '1.0'. project has a quota of '8.0' with '8.0' available. View and manage quotas at https://console.cloud.google.com/iam-admin/quotas?usage=USED&project=cilium-20220820000618.

@@ -1,0 +1,83 @@
+2022-08-20 16:47:31,518 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-20 16:47:31,519 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2022-08-20 16:47:31,521 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets']
+2022-08-20 16:47:31,528 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets', 'create']
+2022-08-20 16:47:31,577 DEBUG    root            Running [gcloud.compute.networks.subnets.create] with arguments: [--network: "bmutziu-14804-cluster-net", --range: "10.0.0.0/16", --region: "europe-north1", --secondary-range: "[OrderedDict([('pods', '10.10.0.0/16'), ('services', '10.100.0.0/16')])]", NAME: "bmutziu-14804-node-subnet"]
+2022-08-20 16:47:31,589 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 16:47:37,567 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 16:47:37,573 DEBUG    root            Operations to inspect: [<Operation
+ id: 5751881739981904662
+ insertTime: '2022-08-20T06:47:37.208-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661003251900-5e6ac74ccdf5c-55a7e809-5874532d'
+ operationType: 'insert'
+ progress: 0
+ region: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/operations/operation-1661003251900-5e6ac74ccdf5c-55a7e809-5874532d'
+ startTime: '2022-08-20T06:47:37.222-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 2597359747198704406
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-20 16:47:37,578 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 16:48:15,251 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 16:48:15,256 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2022-08-20T06:48:15.133-07:00'
+ id: 5751881739981904662
+ insertTime: '2022-08-20T06:47:37.208-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661003251900-5e6ac74ccdf5c-55a7e809-5874532d'
+ operationType: 'insert'
+ progress: 100
+ region: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/operations/operation-1661003251900-5e6ac74ccdf5c-55a7e809-5874532d'
+ startTime: '2022-08-20T06:47:37.222-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 2597359747198704406
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-20 16:48:15,256 INFO     ___FILE_ONLY___ Created [https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet].
+
+2022-08-20 16:48:15,261 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 16:48:15,621 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 16:48:15,629 INFO     root            Display format: "    table(
+      name,
+      region.basename(),
+      network.basename(),
+      ipCidrRange:label=RANGE,
+      stackType,
+      ipv6AccessType,
+      internalIpv6Prefix,
+      externalIpv6Prefix
+    )"
+2022-08-20 16:48:15,633 INFO     root            cache collection=compute.networks api_version=v1 params=['project', 'network']
+2022-08-20 16:48:15,671 INFO     ___FILE_ONLY___ NAME
+2022-08-20 16:48:15,671 INFO     ___FILE_ONLY___                        
+2022-08-20 16:48:15,671 INFO     ___FILE_ONLY___ REGION
+2022-08-20 16:48:15,671 INFO     ___FILE_ONLY___          
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ NETWORK
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___                     
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ RANGE
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___         
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ STACK_TYPE
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___   
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ IPV6_ACCESS_TYPE
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___   
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ INTERNAL_IPV6_PREFIX
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___   
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ EXTERNAL_IPV6_PREFIX
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ 
+
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ bmutziu-14804-node-subnet
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___   
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ europe-north1
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___   
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ bmutziu-14804-cluster-net
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___   
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ 10.0.0.0/16
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___   
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ IPV4_ONLY
+2022-08-20 16:48:15,672 INFO     ___FILE_ONLY___ 
+

@@ -1,0 +1,14 @@
+2022-08-19 10:59:25,948 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 10:59:25,950 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2022-08-19 10:59:25,951 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'delete']
+2022-08-19 10:59:25,952 DEBUG    root            Running [gcloud.config.configurations.delete] with arguments: [CONFIGURATION_NAMES:1: "['default']"]
+2022-08-19 10:59:25,952 DEBUG    root            (gcloud.config.configurations.delete) Deleting named configuration failed because configuration [default] is set as active.  Use `gcloud config configurations activate` to change the active configuration.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/config/configurations/delete.py", line 73, in Run
+    raise named_configs.NamedConfigError(
+googlecloudsdk.core.configurations.named_configs.NamedConfigError: Deleting named configuration failed because configuration [default] is set as active.  Use `gcloud config configurations activate` to change the active configuration.
+2022-08-19 10:59:25,952 ERROR    root            (gcloud.config.configurations.delete) Deleting named configuration failed because configuration [default] is set as active.  Use `gcloud config configurations activate` to change the active configuration.

@@ -1,0 +1,44 @@
+2022-08-20 18:00:29,370 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-20 18:00:29,371 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall_rules']
+2022-08-20 18:00:29,374 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'update']
+2022-08-20 18:00:29,423 DEBUG    root            Running [gcloud.compute.firewall-rules.update] with arguments: [--source-ranges: "['10.10.0.0/16', '10.11.0.0/16']", NAME: "gke-bmutziu-1513-9f221dbd-all"]
+2022-08-20 18:00:29,434 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 18:00:30,186 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 18:00:30,196 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 18:00:31,109 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 18:00:31,114 DEBUG    root            Operations to inspect: [<Operation
+ id: 389764827845577185
+ insertTime: '2022-08-20T08:00:30.868-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661007630488-5e6ad79c8d3e7-5f561a97-ee91d5ab'
+ operationType: 'patch'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661007630488-5e6ad79c8d3e7-5f561a97-ee91d5ab'
+ startTime: '2022-08-20T08:00:30.878-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 7496247359671455016
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/firewalls/gke-bmutziu-1513-9f221dbd-all'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-20 18:00:31,119 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 18:00:34,116 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 18:00:34,121 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2022-08-20T08:00:33.961-07:00'
+ id: 389764827845577185
+ insertTime: '2022-08-20T08:00:30.868-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661007630488-5e6ad79c8d3e7-5f561a97-ee91d5ab'
+ operationType: 'patch'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661007630488-5e6ad79c8d3e7-5f561a97-ee91d5ab'
+ startTime: '2022-08-20T08:00:30.878-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 7496247359671455016
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/firewalls/gke-bmutziu-1513-9f221dbd-all'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-20 18:00:34,122 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/firewalls/gke-bmutziu-1513-9f221dbd-all].
+
+2022-08-20 18:00:34,126 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 18:00:34,689 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 18:00:34,697 INFO     root            Display format: "none"

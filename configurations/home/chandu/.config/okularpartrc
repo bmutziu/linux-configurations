@@ -1,8 +1,0 @@
-[$Version]
-update_info=okular.upd:annotation-toolbar,okular.upd:builtin-annotations
-
-[Main View]
-SplitterSizes=350,1141
-
-[PageView]
-MouseMode=TextSelect

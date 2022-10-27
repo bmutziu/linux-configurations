@@ -1,0 +1,11 @@
+2022-08-20 01:14:30,481 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2022-08-20 01:14:30,484 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2022-08-20 01:14:30,485 DEBUG    root            Running [gcloud.components.install] with arguments: [COMPONENT-IDS:1: "['gke-gcloud-auth-plugin']"]
+2022-08-20 01:14:30,558 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2022-08-20 01:14:30,971 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-v391.0.0.json HTTP/1.1" 200 190919
+2022-08-20 01:14:31,133 INFO     ___FILE_ONLY___ 
+
+2022-08-20 01:14:31,133 INFO     ___FILE_ONLY___ All components are up to date.
+
+2022-08-20 01:14:31,133 DEBUG    root            Updating notification cache...
+2022-08-20 01:14:31,136 INFO     root            Display format: "none"

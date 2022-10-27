@@ -1,0 +1,44 @@
+2022-08-21 17:58:31,776 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-21 17:58:31,777 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2022-08-21 17:58:31,778 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets']
+2022-08-21 17:58:31,780 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets', 'delete']
+2022-08-21 17:58:31,781 DEBUG    root            Running [gcloud.compute.networks.subnets.delete] with arguments: [--region: "europe-north1", NAME:1: "['bmutziu-14804-node-subnet']"]
+2022-08-21 17:58:33,074 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-21 17:58:35,058 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-21 17:58:35,063 DEBUG    root            Operations to inspect: [<Operation
+ id: 4941419164958979829
+ insertTime: '2022-08-21T07:58:34.635-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661093913400-5e6c190a5934f-9855fc42-597241b5'
+ operationType: 'delete'
+ progress: 0
+ region: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/operations/operation-1661093913400-5e6c190a5934f-9855fc42-597241b5'
+ startTime: '2022-08-21T07:58:34.648-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 2597359747198704406
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-21 17:58:35,068 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-21 17:59:04,755 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-21 17:59:04,759 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2022-08-21T07:59:04.490-07:00'
+ id: 4941419164958979829
+ insertTime: '2022-08-21T07:58:34.635-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661093913400-5e6c190a5934f-9855fc42-597241b5'
+ operationType: 'delete'
+ progress: 100
+ region: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/operations/operation-1661093913400-5e6c190a5934f-9855fc42-597241b5'
+ startTime: '2022-08-21T07:58:34.648-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 2597359747198704406
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-21 17:59:04,760 INFO     ___FILE_ONLY___ Deleted [https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet].
+
+2022-08-21 17:59:04,760 INFO     root            Display format: "none"
+2022-08-21 17:59:04,768 INFO     root            cache collection=compute.subnetworks api_version=beta params=['project', 'region', 'subnetwork']

@@ -1,0 +1,8 @@
+2022-08-21 13:36:09,618 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-21 13:36:09,621 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'describe']
+2022-08-21 13:36:09,635 DEBUG    root            Running [gcloud.container.clusters.describe] with arguments: [--format: "value(clusterIpv4Cidr)", --zone: "europe-north1-a", NAME: "bmutziu-14804"]
+2022-08-21 13:36:09,717 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-21 13:36:10,159 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-north1-a/clusters/bmutziu-14804?alt=json HTTP/1.1" 200 None
+2022-08-21 13:36:10,167 INFO     root            Display format: "default value(clusterIpv4Cidr)"
+2022-08-21 13:36:10,172 INFO     ___FILE_ONLY___ 10.10.0.0/16
+

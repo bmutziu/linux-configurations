@@ -1,0 +1,10 @@
+2022-08-20 17:42:26,907 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-20 17:42:26,908 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall_rules']
+2022-08-20 17:42:26,909 DEBUG    root            No implementation for release track [GA] for element: [/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/compute/firewall_rules/config]
+2022-08-20 17:42:26,911 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'list']
+2022-08-20 17:42:26,912 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'describe']
+2022-08-20 17:42:26,913 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'delete']
+2022-08-20 17:42:26,916 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'update']
+2022-08-20 17:42:26,965 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'create']
+2022-08-20 17:42:26,968 DEBUG    root            No implementation for release track [GA] for element: [/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/compute/firewall_rules/migrate]
+2022-08-20 17:42:26,968 ERROR    root            (gcloud.compute.firewall-rules) Invalid choice: 'gke-bmutziu-14804-6691c925-all'.

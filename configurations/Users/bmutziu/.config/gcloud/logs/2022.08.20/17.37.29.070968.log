@@ -1,0 +1,127 @@
+2022-08-20 17:37:29,078 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-20 17:37:29,079 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall_rules']
+2022-08-20 17:37:29,081 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'firewall-rules', 'list']
+2022-08-20 17:37:29,082 DEBUG    root            Running [gcloud.compute.firewall-rules.list] with arguments: []
+2022-08-20 17:37:29,136 INFO     root            Display format: "    table(
+      name,
+      network.basename(),
+      direction,
+      priority,
+      allowed[].map().firewall_rule().list():label=ALLOW,
+      denied[].map().firewall_rule().list():label=DENY,
+      disabled
+    )"
+2022-08-20 17:37:29,141 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-20 17:37:29,701 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-20 17:37:29,712 INFO     root            cache collection=compute.firewalls api_version=v1 params=['project', 'firewall']
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ NAME
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___                             
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ NETWORK
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___                     
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ DIRECTION
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___   
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ PRIORITY
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___   
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ ALLOW
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___                          
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ DENY
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___   
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ DISABLED
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ 
+
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ default-allow-icmp
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___               
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ default
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___                     
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ INGRESS
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___     
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ 65534
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___      
+2022-08-20 17:37:29,747 INFO     ___FILE_ONLY___ icmp
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___                                 
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ False
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ 
+
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ default-allow-internal
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___           
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ default
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___                     
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ INGRESS
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___     
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ 65534
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___      
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ tcp:0-65535,udp:0-65535,icmp
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___         
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ False
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ 
+
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ default-allow-rdp
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___                
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ default
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___                     
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ INGRESS
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___     
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ 65534
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___      
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ tcp:3389
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___                             
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ False
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ 
+
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ default-allow-ssh
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___                
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ default
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___                     
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ INGRESS
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___     
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ 65534
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___      
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ tcp:22
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___                               
+2022-08-20 17:37:29,748 INFO     ___FILE_ONLY___ False
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ 
+
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ gke-bmutziu-14804-6691c925-all
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___   
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ bmutziu-14804-cluster-net
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___   
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ INGRESS
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___     
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ 1000
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___       
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ tcp,udp,icmp,esp,ah,sctp
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___             
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ False
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ 
+
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ gke-bmutziu-14804-6691c925-ssh
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___   
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ bmutziu-14804-cluster-net
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___   
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ INGRESS
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___     
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ 1000
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___       
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ tcp:22
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___                               
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ False
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ 
+
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ gke-bmutziu-14804-6691c925-vms
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___   
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ bmutziu-14804-cluster-net
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___   
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ INGRESS
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___     
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ 1000
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___       
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ icmp,tcp:1-65535,udp:1-65535
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___         
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ False
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ 
+
+2022-08-20 17:37:29,749 INFO     ___FILE_ONLY___ 
+To show all fields of the firewall, please show in JSON format: --format=json
+To show all fields in table format, please see the examples in --help.
+
+

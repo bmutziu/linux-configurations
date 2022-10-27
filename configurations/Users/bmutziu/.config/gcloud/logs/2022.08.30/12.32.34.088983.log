@@ -1,0 +1,32 @@
+2022-08-30 12:32:34,090 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-30 12:32:34,092 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'create']
+2022-08-30 12:32:34,108 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--cluster-secondary-range-name: "pods", --enable-ip-alias: "True", --network: "bmutziu-1667-cluster-net", --node-taints: "OrderedDict([('node.cilium.io/agent-not-ready', 'true:NoExecute')])", --services-secondary-range-name: "services", --subnetwork: "bmutziu-11988-node-subnet", --zone: "europe-central2-a", NAME: "bmutziu-1667"]
+2022-08-30 12:32:34,110 INFO     ___FILE_ONLY___ Default change: During creation of nodepools or autoscaling configuration changes for cluster versions greater than 1.24.1-gke.800 a default location policy is applied. For Spot and PVM it defaults to ANY, and for all other VM kinds a BALANCED policy is used. To change the default values use the `--location-policy` flag.
+
+2022-08-30 12:32:34,110 INFO     ___FILE_ONLY___ Note: The Pod address range limits the maximum size of the cluster. Please refer to https://cloud.google.com/kubernetes-engine/docs/how-to/flexible-pod-cidr to learn how to optimize IP address allocation.
+
+2022-08-30 12:32:34,269 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 12:32:38,475 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "POST /v1/projects/cilium-20220820000618/locations/europe-central2-a/clusters?alt=json HTTP/1.1" 200 None
+2022-08-30 12:32:38,476 INFO     ___FILE_ONLY___ Creating cluster bmutziu-1667 in europe-central2-a...
+2022-08-30 12:32:38,478 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 12:32:39,294 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661851957998-fa11fe8b?alt=json HTTP/1.1" 200 None
+2022-08-30 12:32:44,298 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 12:32:44,762 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661851957998-fa11fe8b?alt=json HTTP/1.1" 200 None
+2022-08-30 12:32:49,767 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 12:32:50,356 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661851957998-fa11fe8b?alt=json HTTP/1.1" 200 None
+2022-08-30 12:32:55,360 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-30 12:32:56,081 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-a/operations/operation-1661851957998-fa11fe8b?alt=json HTTP/1.1" 200 None
+2022-08-30 12:33:00,443 DEBUG    root            (gcloud.container.clusters.create) Aborted by user.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/create.py", line 1148, in Run
+    operation = adapter.WaitForOperation(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1453, in WaitForOperation
+    time.sleep(poll_period_s)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/console/progress_tracker.py", line 154, in _CtrlCHandler
+    raise console_io.OperationCancelledError(self._aborted_message)
+googlecloudsdk.core.console.console_io.OperationCancelledError: Aborted by user.
+2022-08-30 12:33:00,444 ERROR    root            (gcloud.container.clusters.create) Aborted by user.

@@ -13,7 +13,7 @@ homeDirectory=~
 sameLine="\e[1A\e[K"
 
 echo "🛑 Clearing configurations directory..."
-# removing the folder with exsiting contents. we have git version anyway!
+# removing the folder with exisbrew install coreutilsting contents. we have git version anyway!
 rm -rf configurations
 # creating it again for backup.
 mkdir configurations
@@ -34,7 +34,7 @@ sed '/^[ \t]*$/d' $backupPaths | while read filePath; do
   originalFile="${filePath//${findThis}/${replaceWith}}"
 
   # copying the files
-  cp --parents --recursive "$originalFile" ./configurations
+  gcp --parents --recursive "$originalFile" ./configurations
   sleep 0.05
 done
 

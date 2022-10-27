@@ -1,0 +1,44 @@
+2022-08-20 00:05:47,883 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-20 00:05:47,886 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'create']
+2022-08-20 00:05:47,906 DEBUG    root            Running [gcloud.container.clusters.create] with arguments: [--node-taints: "OrderedDict([('node.cilium.io/agent-not-ready', 'true:NoExecute')])", --zone: "europe-north1-a", NAME: "bmutziu-711"]
+2022-08-20 00:05:47,908 DEBUG    root            (gcloud.container.clusters.create) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/create.py", line 1070, in Run
+    cluster_ref = adapter.ParseCluster(args.name, location)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1268, in ParseCluster
+    project = project or properties.VALUES.core.project.GetOrFail()
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3373, in GetOrFail
+    return self.Get(required=True)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3389, in Get
+    property_value = self.GetPropertyValue(required, validate)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3408, in GetPropertyValue
+    property_value = _GetProperty(self,
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3741, in _GetProperty
+    raise RequiredPropertyError(prop, flag=flag_to_use)
+googlecloudsdk.core.properties.RequiredPropertyError: The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+2022-08-20 00:05:47,910 ERROR    root            (gcloud.container.clusters.create) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]

@@ -1,0 +1,22 @@
+2022-08-20 00:06:26,967 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2022-08-20 00:06:26,971 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'create']
+2022-08-20 00:06:26,972 DEBUG    root            Running [gcloud.projects.create] with arguments: [PROJECT_ID: "cilium-20220820000618"]
+2022-08-20 00:06:27,102 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2022-08-20 00:06:28,304 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects?alt=json HTTP/1.1" 200 None
+2022-08-20 00:06:28,309 INFO     ___FILE_ONLY___ Create in progress for [https://cloudresourcemanager.googleapis.com/v1/projects/cilium-20220820000618].
+
+2022-08-20 00:06:28,309 INFO     ___FILE_ONLY___ Waiting for [operations/cp.8400826198073699936] to finish...
+2022-08-20 00:06:29,327 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2022-08-20 00:06:30,774 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/operations/cp.8400826198073699936?alt=json HTTP/1.1" 200 None
+2022-08-20 00:06:33,376 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2022-08-20 00:06:34,559 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/operations/cp.8400826198073699936?alt=json HTTP/1.1" 200 None
+2022-08-20 00:06:34,569 DEBUG    root            Enabling cloudapis.googleapis.com
+2022-08-20 00:06:34,569 INFO     ___FILE_ONLY___ Enabling service [cloudapis.googleapis.com] on project [cilium-20220820000618]...
+
+2022-08-20 00:06:34,687 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2022-08-20 00:06:36,721 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/cilium-20220820000618/services/cloudapis.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2022-08-20 00:06:36,742 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2022-08-20 00:06:37,836 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acat.p2-266622789771-dc775a01-2562-4ff8-aac4-e2794f76f5d0?alt=json HTTP/1.1" 200 None
+2022-08-20 00:06:37,846 INFO     ___FILE_ONLY___ Operation "operations/acat.p2-266622789771-dc775a01-2562-4ff8-aac4-e2794f76f5d0" finished successfully.
+
+2022-08-20 00:06:37,850 INFO     root            Display format: "none"

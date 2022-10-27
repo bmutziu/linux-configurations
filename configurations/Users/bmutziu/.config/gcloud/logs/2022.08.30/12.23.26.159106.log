@@ -1,0 +1,19 @@
+2022-08-30 12:23:26,167 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-30 12:23:26,177 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2022-08-30 12:23:26,178 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "cilium-20220820000618", --zone: "europe-north1-a", [USER@]INSTANCE: "gke-bmutziu-1667-default-pool-f9cbdadd-7xmc"]
+2022-08-30 12:23:26,246 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-30 12:23:27,042 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-30 12:23:27,158 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-30 12:23:27,871 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-30 12:23:27,874 DEBUG    root            OS Login Enabled: False
+Security Keys Enabled: False
+Username: bmutziu
+SSH Security Key Support: None
+Environment: None
+Security Keys:
+
+
+2022-08-30 12:23:27,874 DEBUG    root            Current SSH keys in project: ['bmutziu:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDQvS+wSlIUN8URNmHnmwn2XizyakP2gHHJAwaoD/6srqRKxkQpUr32WbULxLuGrAOs/ShyX6hK5d4R6fNFPatjXJVElC2s1oFZJDboiUekJim+qt+igaxz2xK621W2uk1WFj+zz/8by7n+EEx3cn+zlUEQEhlvI9Yhg8thV9qWP1jQQ8dtNyo6cdfKo6TK61/BDKaBNaF1cOt+bX6Gql5Gw5VwQ1LiN7TMVzFuJgPDjZsW5+R7LOhMraIrOAITwT03qgeKXo40eJuRPG+QmGExQcNep0Oxq/J+S//LKs+yoKRY+IOdY3CNUyUX+Ahi/UAW8M3NtE4eIgJOBxE3PiCCg5GP4FRoj+bk7MrhJ+ksHpMeQ4Bol/cWEpMWsiHn4eS83MrQKFCUIPTMA7yb/lex96uf81yg3sKgqfTrggkPE3T+Bu6Pukm39PvGa5MxBGDcX4WDMIa4A7KkHQnoNZ1Dv+qvlt3vGeZ6TjHRobd86D2nnB8aZEPawhOfvbY4B3U= bmutziu@MBP-Bogdan']
+2022-08-30 12:23:27,874 DEBUG    root            Running command [/usr/bin/ssh -t -i /Users/bmutziu/.ssh/google_compute_engine -o CheckHostIP=no -o HashKnownHosts=no -o HostKeyAlias=compute.1691016476877680009 -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=/Users/bmutziu/.ssh/google_compute_known_hosts bmutziu@34.88.229.14].
+2022-08-30 12:23:27,874 DEBUG    root            Executing command: ['/usr/bin/ssh', '-t', '-i', '/Users/bmutziu/.ssh/google_compute_engine', '-o', 'CheckHostIP=no', '-o', 'HashKnownHosts=no', '-o', 'HostKeyAlias=compute.1691016476877680009', '-o', 'IdentitiesOnly=yes', '-o', 'StrictHostKeyChecking=yes', '-o', 'UserKnownHostsFile=/Users/bmutziu/.ssh/google_compute_known_hosts', 'bmutziu@34.88.229.14']
+2022-08-30 12:30:10,874 INFO     root            Display format: "default"

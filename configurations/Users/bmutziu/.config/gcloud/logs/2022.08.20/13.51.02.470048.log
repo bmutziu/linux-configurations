@@ -1,0 +1,15 @@
+2022-08-20 13:51:02,471 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-20 13:51:02,474 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'describe']
+2022-08-20 13:51:02,482 DEBUG    root            Running [gcloud.container.clusters.describe] with arguments: [--format: "value(clusterIpv4Cidr)", --zone: "", NAME: "bmutziu-711"]
+2022-08-20 13:51:02,482 DEBUG    root            (gcloud.container.clusters.describe) One of [--zone, --region] must be supplied: Please specify location.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/describe.py", line 63, in Run
+    location = location_get(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/command_lib/container/container_command_util.py", line 241, in GetZoneOrRegion
+    raise calliope_exceptions.MinimumArgumentException(
+googlecloudsdk.calliope.exceptions.MinimumArgumentException: One of [--zone, --region] must be supplied: Please specify location.
+2022-08-20 13:51:02,483 ERROR    root            (gcloud.container.clusters.describe) One of [--zone, --region] must be supplied: Please specify location.

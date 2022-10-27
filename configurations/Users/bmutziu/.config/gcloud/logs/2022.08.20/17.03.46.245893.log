@@ -1,0 +1,6 @@
+2022-08-20 17:03:46,246 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-20 17:03:46,248 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'create']
+2022-08-20 17:03:46,256 ERROR    root            (gcloud.container.clusters.create) unrecognized arguments: ---services-ipv4-cidr=10.100.0.0/16 (did you mean '--services-ipv4-cidr'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS

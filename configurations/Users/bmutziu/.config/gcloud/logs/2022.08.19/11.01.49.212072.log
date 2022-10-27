@@ -1,0 +1,9 @@
+2022-08-19 11:01:49,212 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 11:01:49,213 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2022-08-19 11:01:49,214 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'create']
+2022-08-19 11:01:49,215 DEBUG    root            Running [gcloud.config.configurations.create] with arguments: [CONFIGURATION_NAME: "cilium"]
+2022-08-19 11:01:49,215 INFO     ___FILE_ONLY___ Created [cilium].
+
+2022-08-19 11:01:49,216 INFO     ___FILE_ONLY___ Activated [cilium].
+
+2022-08-19 11:01:49,216 INFO     root            Display format: "none"

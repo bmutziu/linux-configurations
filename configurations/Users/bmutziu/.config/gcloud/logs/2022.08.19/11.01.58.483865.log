@@ -1,0 +1,11 @@
+2022-08-19 11:01:58,484 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 11:01:58,485 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2022-08-19 11:01:58,485 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'delete']
+2022-08-19 11:01:58,486 DEBUG    root            Running [gcloud.config.configurations.delete] with arguments: [CONFIGURATION_NAMES:1: "['default']"]
+2022-08-19 11:01:58,486 INFO     ___FILE_ONLY___ The following configurations will be deleted:
+
+2022-08-19 11:01:58,486 INFO     ___FILE_ONLY___  - default
+
+2022-08-19 11:02:02,606 INFO     ___FILE_ONLY___ Deleted [default].
+
+2022-08-19 11:02:02,606 INFO     root            Display format: "none"

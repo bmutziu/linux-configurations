@@ -1,0 +1,19 @@
+2022-08-20 00:26:45,336 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-20 00:26:45,338 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-08-20 00:26:45,348 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--zone: "europe-north1-a", NAME: ""]
+2022-08-20 00:26:45,349 DEBUG    root            (gcloud.container.clusters.get-credentials) could not parse resource []
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/get_credentials.py", line 113, in Run
+    cluster, cluster_ref = _BaseRun(args, self.context)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/get_credentials.py", line 38, in _BaseRun
+    cluster_ref = adapter.ParseCluster(args.name, location)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1272, in ParseCluster
+    return self.registry.Parse(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/resources.py", line 1188, in Parse
+    raise InvalidResourceException(line)
+googlecloudsdk.core.resources.InvalidResourceException: could not parse resource []
+2022-08-20 00:26:45,351 ERROR    root            (gcloud.container.clusters.get-credentials) could not parse resource []

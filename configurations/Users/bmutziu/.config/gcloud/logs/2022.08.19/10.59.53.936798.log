@@ -1,0 +1,34 @@
+2022-08-19 10:59:53,937 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 10:59:53,938 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2022-08-19 10:59:53,939 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'list']
+2022-08-19 10:59:53,940 DEBUG    root            Running [gcloud.config.configurations.list] with arguments: []
+2022-08-19 10:59:53,940 INFO     root            Display format: "table(
+        name,
+        is_active,
+        properties.core.account,
+        properties.core.project,
+        properties.compute.zone:label=COMPUTE_DEFAULT_ZONE,
+        properties.compute.region:label=COMPUTE_DEFAULT_REGION)
+    "
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ NAME
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___      
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ IS_ACTIVE
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___   
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ ACCOUNT
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___             
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ PROJECT
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___          
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ COMPUTE_DEFAULT_ZONE
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___   
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ COMPUTE_DEFAULT_REGION
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ 
+
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ default
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___   
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ True
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___        
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ bmutziu@gmail.com
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___   
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ devops-cp-ssrc
+2022-08-19 10:59:53,942 INFO     ___FILE_ONLY___ 
+

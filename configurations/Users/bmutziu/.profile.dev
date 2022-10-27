@@ -1,0 +1,99 @@
+# Functions
+
+# Disable error when using glob patterns that don't have matches
+setopt +o nomatch
+
+cheat() { curl -s "cheat.sh/$1"; }
+
+# Open vim in a new kitty tab
+tab_nvim() {
+  kitty @ launch --type tab --cwd $1 --no-response --keep-focus nvim . 2>/dev/null 1>/dev/null &;
+}
+
+zv() {
+  z $1 && nvim .;
+}
+
+groot() {
+  root="$(git rev-parse --show-toplevel 2>/dev/null)"
+  if [ -n "$root" ]; then
+      cd $root;
+  else
+      echo "Not in a git repository"
+  fi
+}
+
+# retrieve process real memory
+psrm() {
+  ps -o rss= -p $1 | awk '{ hr=$1/1024; printf "%13.2f Mb\n",hr }' | tr -d ' ';
+}
+
+# watch process real memory
+psrml() {
+  while true;
+  do
+    psrm $1;
+    sleep 1;
+  done
+}
+
+git_commit() {
+  if [ -z "$3" ]
+  then
+    git commit -m "$1: $2"
+  else
+    git commit -m "$1($2): $3"
+  fi
+}
+
+gshow() {
+  open $(git remote -v | grep fetch | awk '{print $2}' | sed 's/git@/http:\/\//' | sed 's/com:/com\//' | head -n1);
+}
+
+export NNN_PLUG='p:preview-tui;i:imgview;v:-!cd $nnn && nvim .;o:nvim'
+export NNN_FIFO=/tmp/nnn.fifo
+
+# Aliases
+
+if [ "$(command -v exa)" ]; then
+  unalias -m 'll'
+  unalias -m 'l'
+  unalias -m 'la'
+  unalias -m 'ls'
+  alias ls="exa -G  --color auto --icons -a -s type"
+  alias ll='exa -l --color always --icons -a -s type'
+fi
+
+alias nnn="nnn -a"
+
+alias yw="yarn workspace"
+alias python=python3
+alias cat="bat -p --paging=never"
+
+# Conventional Commits
+alias gr="git_commit refactor"
+alias gt="git_commit test"
+alias gfi="git_commit fix"
+alias gfe="git_commit feat"
+alias gch="git_commit chore"
+alias gst="git_commit style"
+alias gci="git_commit ci"
+alias gd="git_commit docs"
+alias gm="git_commit misc"
+alias gnv="git commit --no-verify -m"
+
+
+alias dc="docker compose"
+alias kc="kubectl"
+alias kcg='kubectl get'
+alias kcd='kubectl describe'
+alias k9="k9s"
+
+alias icat="kitty +kitten icat --align left"
+
+# create random password
+alias mkpwd="xkcdpass --count=5 --acrostic=\"chaos\" -C \"first\" -R --min=5 --max=6 -D \"#@^&~_-;\""
+alias isodate='date --iso-8601=seconds'
+alias serv="python3 -m http.server"
+
+alias l='ls -lacrt'

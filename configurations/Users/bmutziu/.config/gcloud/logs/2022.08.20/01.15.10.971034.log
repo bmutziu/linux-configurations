@@ -1,0 +1,11 @@
+2022-08-20 01:15:10,972 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-20 01:15:10,973 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-08-20 01:15:10,982 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--zone: "europe-north1-a", NAME: "bmutziu-711"]
+2022-08-20 01:15:10,983 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-08-20 01:15:11,095 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-20 01:15:11,530 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-north1-a/clusters/bmutziu-711?alt=json HTTP/1.1" 200 None
+2022-08-20 01:15:11,755 DEBUG    root            Saved kubeconfig to /Users/bmutziu/.kube/config
+2022-08-20 01:15:11,755 INFO     ___FILE_ONLY___ kubeconfig entry generated for bmutziu-711.
+
+2022-08-20 01:15:11,757 INFO     root            Display format: "default"

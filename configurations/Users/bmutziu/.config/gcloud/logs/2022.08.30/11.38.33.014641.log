@@ -1,0 +1,42 @@
+2022-08-30 11:38:33,015 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2022-08-30 11:38:33,017 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2022-08-30 11:38:33,018 DEBUG    root            Running [gcloud.projects.list] with arguments: []
+2022-08-30 11:38:33,018 INFO     root            client_filter="None" server_filter="None"
+2022-08-30 11:38:33,935 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2022-08-30 11:38:34,026 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-08-30 11:38:34,450 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-08-30 11:38:34,465 INFO     root            Display format: "
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+"
+2022-08-30 11:38:34,558 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2022-08-30 11:38:36,589 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=500 HTTP/1.1" 200 None
+2022-08-30 11:38:36,591 INFO     ___FILE_ONLY___ PROJECT_ID
+2022-08-30 11:38:36,591 INFO     ___FILE_ONLY___              
+2022-08-30 11:38:36,591 INFO     ___FILE_ONLY___ NAME
+2022-08-30 11:38:36,591 INFO     ___FILE_ONLY___                    
+2022-08-30 11:38:36,591 INFO     ___FILE_ONLY___ PROJECT_NUMBER
+2022-08-30 11:38:36,591 INFO     ___FILE_ONLY___ 
+
+2022-08-30 11:38:36,592 INFO     ___FILE_ONLY___ cilium-20220820000618
+2022-08-30 11:38:36,592 INFO     ___FILE_ONLY___   
+2022-08-30 11:38:36,592 INFO     ___FILE_ONLY___ cilium-20220820000618
+2022-08-30 11:38:36,592 INFO     ___FILE_ONLY___   
+2022-08-30 11:38:36,592 INFO     ___FILE_ONLY___ 266622789771
+2022-08-30 11:38:36,592 INFO     ___FILE_ONLY___ 
+
+2022-08-30 11:38:36,592 DEBUG    root            Checking for updates...
+2022-08-30 11:38:36,676 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2022-08-30 11:38:36,978 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 198784
+2022-08-30 11:38:37,350 DEBUG    root            Updating notification cache...
+2022-08-30 11:38:37,350 DEBUG    root            Activating notification: [default]
+2022-08-30 11:38:37,350 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+

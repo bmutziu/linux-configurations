@@ -1,0 +1,38 @@
+2022-08-21 17:48:25,659 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-21 17:48:25,660 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2022-08-21 17:48:25,662 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'delete']
+2022-08-21 17:48:25,663 DEBUG    root            Running [gcloud.compute.networks.delete] with arguments: [--help: "None"]
+2022-08-21 17:48:25,665 DEBUG    root            Loaded Command Group: ['gcloud', 'help']
+2022-08-21 17:48:25,666 INFO     ___FILE_ONLY___ [m[1mNAME[m
+    gcloud compute networks delete - delete Compute Engine networks
+
+[m[1mSYNOPSIS[m
+    [1mgcloud compute networks delete[m [4mNAME[m [[4mNAME[m ...] [[4mGCLOUD_WIDE_FLAG ...[m]
+
+[m[1mDESCRIPTION[m
+    [1mgcloud compute networks delete[m deletes one or more Compute Engine networks.
+    Networks can only be deleted when no other resources (e.g., virtual machine
+    instances) refer to them.
+
+[m[1mEXAMPLES[m
+    To delete a network with the name 'network-name', run:
+
+        $ gcloud compute networks delete network-name
+
+    To delete two networks with the names 'network-name1' and 'network-name2',
+    run:
+
+        $ gcloud compute networks delete network-name1 network-name2
+
+[m[1mPOSITIONAL ARGUMENTS[m
+     [4mNAME[m [[4mNAME[m ...]
+        Names of the networks to delete.
+
+[m[1mGCLOUD WIDE FLAGS[m
+    These flags are available to all commands: --access-token-file, --account,
+    --billing-project, --configuration, --flags-file, --flatten, --format,
+    --help, --impersonate-service-account, --log-http, --project, --quiet,
+    --trace-token, --user-output-enabled, --verbosity.
+
+    Run [1m$ gcloud help[m for details.
+[m

@@ -1,0 +1,30 @@
+2022-08-19 10:58:06,851 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 10:58:06,854 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2022-08-19 10:58:06,855 DEBUG    root            Running [gcloud.config.list] with arguments: []
+2022-08-19 10:58:06,856 INFO     root            Display format: "config"
+2022-08-19 10:58:06,856 INFO     ___FILE_ONLY___ [core]
+account = bmutziu@gmail.com
+disable_usage_reporting = True
+project = devops-cp-ssrc
+
+2022-08-19 10:58:06,856 INFO     ___FILE_ONLY___ 
+Your active configuration is: [default]
+
+2022-08-19 10:58:06,857 DEBUG    root            Checking for updates...
+2022-08-19 10:58:06,911 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2022-08-19 10:58:07,227 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 201563
+2022-08-19 10:58:07,400 DEBUG    root            Updating notification cache...
+2022-08-19 10:58:07,400 DEBUG    root            Activating notification: [default]
+2022-08-19 10:58:07,400 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2022-08-19 10:58:07,403 INFO     ___FILE_ONLY___ 
+
+To take a quick anonymous survey, run:
+  $ gcloud survey
+
+

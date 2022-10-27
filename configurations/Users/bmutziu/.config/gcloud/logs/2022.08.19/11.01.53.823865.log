@@ -1,0 +1,10 @@
+2022-08-19 11:01:53,824 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 11:01:53,825 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2022-08-19 11:01:53,826 DEBUG    root            Running [gcloud.config.list] with arguments: []
+2022-08-19 11:01:53,827 INFO     root            Display format: "config"
+2022-08-19 11:01:53,827 INFO     ___FILE_ONLY___ [core]
+disable_usage_reporting = True
+
+2022-08-19 11:01:53,827 INFO     ___FILE_ONLY___ 
+Your active configuration is: [cilium]
+

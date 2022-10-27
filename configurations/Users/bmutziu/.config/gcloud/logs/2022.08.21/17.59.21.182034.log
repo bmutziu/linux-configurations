@@ -1,0 +1,41 @@
+2022-08-21 17:59:21,189 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-21 17:59:21,190 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2022-08-21 17:59:21,192 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'delete']
+2022-08-21 17:59:21,193 DEBUG    root            Running [gcloud.compute.networks.delete] with arguments: [NAME:1: "['bmutziu-14804-cluster-net']"]
+2022-08-21 17:59:22,639 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-21 17:59:23,699 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-21 17:59:23,704 DEBUG    root            Operations to inspect: [<Operation
+ id: 4100268322756490916
+ insertTime: '2022-08-21T07:59:23.400-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661093962997-5e6c1939a5fc9-aaa5bd8b-ce58011b'
+ operationType: 'delete'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661093962997-5e6c1939a5fc9-aaa5bd8b-ce58011b'
+ startTime: '2022-08-21T07:59:23.410-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 3446977361511013250
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/networks/bmutziu-14804-cluster-net'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-21 17:59:23,710 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-21 17:59:40,597 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-21 17:59:40,620 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2022-08-21T07:59:40.327-07:00'
+ id: 4100268322756490916
+ insertTime: '2022-08-21T07:59:23.400-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661093962997-5e6c1939a5fc9-aaa5bd8b-ce58011b'
+ operationType: 'delete'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661093962997-5e6c1939a5fc9-aaa5bd8b-ce58011b'
+ startTime: '2022-08-21T07:59:23.410-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 3446977361511013250
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/networks/bmutziu-14804-cluster-net'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-21 17:59:40,635 INFO     ___FILE_ONLY___ Deleted [https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/networks/bmutziu-14804-cluster-net].
+
+2022-08-21 17:59:40,637 INFO     root            Display format: "none"
+2022-08-21 17:59:40,721 INFO     root            cache collection=compute.networks api_version=v1 params=['project', 'network']

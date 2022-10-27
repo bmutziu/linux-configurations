@@ -1,5 +1,28 @@
-# Static table lookup for hostnames.
-# See hosts(5) for details.
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
 127.0.0.1	localhost
-::1		localhost
-127.0.1.1	arch
+255.255.255.255	broadcasthost
+::1             localhost
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
+
+# harbor
+35.184.170.95 core.harbor.domain
+
+# hubble
+# 127.0.0.1 hubble-ui.kind.cluster
+172.19.255.200 hubble-ui.kind.cluster
+172.18.255.200 keycloak.kind.cluster
+172.18.255.200 mattermost.kind.cluster
+172.18.255.200 argocd.kind.cluster
+172.18.255.200 gitea.kind.cluster
+172.18.255.200 policy-reporter.kind.cluster
+172.18.255.200 alertmanager.kind.cluster
+172.18.255.200 grafana.kind.cluster
+172.18.255.200 prometheus.kind.cluster

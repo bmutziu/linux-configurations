@@ -1,0 +1,40 @@
+2022-08-19 10:55:52,766 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-19 10:55:52,775 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones']
+2022-08-19 10:55:52,790 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones', 'list']
+2022-08-19 10:55:52,791 DEBUG    root            Running [gcloud.compute.zones.list] with arguments: []
+2022-08-19 10:55:52,836 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2022-08-19 10:55:52,878 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-08-19 10:55:53,165 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-08-19 10:55:53,354 INFO     root            Display format: "        table(name,
+              region.basename(),
+              status():label=STATUS,
+              maintenanceWindows.next_maintenance():label=NEXT_MAINTENANCE,
+              deprecated.deleted:label=TURNDOWN_DATE
+        )"
+2022-08-19 10:55:53,440 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-19 10:55:54,078 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-19 10:55:54,086 DEBUG    root            (gcloud.compute.zones.list) Some requests did not succeed:
+ - The resource 'projects/devops-cp-ssrc' was not found
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 811, in Run
+    display_info=self.ai.display_info).Display()
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 483, in Display
+    self._printer.Print(self._resources)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 298, in Print
+    for resource in resources:
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/util/peek_iterable.py", line 211, in __next__
+    item = self._NextItem()
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/util/peek_iterable.py", line 183, in _NextItem
+    return next(self._iterable)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/lister.py", line 976, in __call__
+    utils.RaiseException(errors, ListException)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 137, in RaiseException
+    raise exception(
+googlecloudsdk.api_lib.compute.lister.ListException: Some requests did not succeed:
+ - The resource 'projects/devops-cp-ssrc' was not found
+
+2022-08-19 10:55:54,088 ERROR    root            (gcloud.compute.zones.list) Some requests did not succeed:
+ - The resource 'projects/devops-cp-ssrc' was not found
+

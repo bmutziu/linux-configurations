@@ -1,0 +1,68 @@
+2022-08-21 17:56:43,885 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-21 17:56:43,886 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2022-08-21 17:56:43,889 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'delete']
+2022-08-21 17:56:43,890 DEBUG    root            Running [gcloud.compute.networks.delete] with arguments: [NAME:1: "['bmutziu-14804-cluster-net']"]
+2022-08-21 17:56:43,892 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2022-08-21 17:56:43,948 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-08-21 17:56:44,208 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-08-21 17:56:46,269 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-21 17:56:47,395 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-21 17:56:47,400 DEBUG    root            Operations to inspect: [<Operation
+ id: 1227375530369612097
+ insertTime: '2022-08-21T07:56:46.899-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661093806578-5e6c18a479d24-13e60efc-1f333d1e'
+ operationType: 'delete'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661093806578-5e6c18a479d24-13e60efc-1f333d1e'
+ startTime: '2022-08-21T07:56:46.907-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 3446977361511013250
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/networks/bmutziu-14804-cluster-net'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-21 17:56:47,405 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-21 17:56:57,674 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-21 17:56:57,679 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2022-08-21T07:56:57.489-07:00'
+ error: <ErrorValue
+ errors: [<ErrorsValueListEntry
+ code: 'RESOURCE_IN_USE_BY_ANOTHER_RESOURCE'
+ errorDetails: []
+ message: "The network resource 'projects/cilium-20220820000618/global/networks/bmutziu-14804-cluster-net' is already being used by 'projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet'">]>
+ httpErrorMessage: 'BAD REQUEST'
+ httpErrorStatusCode: 400
+ id: 1227375530369612097
+ insertTime: '2022-08-21T07:56:46.899-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661093806578-5e6c18a479d24-13e60efc-1f333d1e'
+ operationType: 'delete'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661093806578-5e6c18a479d24-13e60efc-1f333d1e'
+ startTime: '2022-08-21T07:56:46.907-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 3446977361511013250
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/networks/bmutziu-14804-cluster-net'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-21 17:56:57,680 DEBUG    root            (gcloud.compute.networks.delete) Could not fetch resource:
+ - The network resource 'projects/cilium-20220820000618/global/networks/bmutziu-14804-cluster-net' is already being used by 'projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet'
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/compute/networks/delete.py", line 73, in Run
+    return client.MakeRequests(requests)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 108, in MakeRequests
+    utils.RaiseToolException(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 128, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 137, in RaiseException
+    raise exception(
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - The network resource 'projects/cilium-20220820000618/global/networks/bmutziu-14804-cluster-net' is already being used by 'projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet'
+
+2022-08-21 17:56:57,682 ERROR    root            (gcloud.compute.networks.delete) Could not fetch resource:
+ - The network resource 'projects/cilium-20220820000618/global/networks/bmutziu-14804-cluster-net' is already being used by 'projects/cilium-20220820000618/regions/europe-north1/subnetworks/bmutziu-14804-node-subnet'
+

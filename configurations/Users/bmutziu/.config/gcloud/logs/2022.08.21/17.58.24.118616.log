@@ -1,0 +1,28 @@
+2022-08-21 17:58:24,125 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-21 17:58:24,127 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2022-08-21 17:58:24,127 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets']
+2022-08-21 17:58:24,130 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets', 'delete']
+2022-08-21 17:58:24,131 DEBUG    root            Running [gcloud.compute.networks.subnets.delete] with arguments: [--region: "europe-north1-a", NAME:1: "['bmutziu-14804-node-subnet']"]
+2022-08-21 17:58:25,346 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-21 17:58:25,632 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-21 17:58:25,640 DEBUG    root            (gcloud.compute.networks.subnets.delete) Could not fetch resource:
+ - Invalid value for field 'region': 'europe-north1-a'. Unknown region.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/compute/networks/subnets/delete.py", line 82, in Run
+    return client.MakeRequests(requests)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 108, in MakeRequests
+    utils.RaiseToolException(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 128, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 137, in RaiseException
+    raise exception(
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - Invalid value for field 'region': 'europe-north1-a'. Unknown region.
+
+2022-08-21 17:58:25,641 ERROR    root            (gcloud.compute.networks.subnets.delete) Could not fetch resource:
+ - Invalid value for field 'region': 'europe-north1-a'. Unknown region.
+

@@ -1,0 +1,10 @@
+2022-08-19 11:05:03,071 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 11:05:03,072 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2022-08-19 11:05:03,073 DEBUG    root            Running [gcloud.config.list] with arguments: []
+2022-08-19 11:05:03,074 INFO     root            Display format: "config"
+2022-08-19 11:05:03,074 INFO     ___FILE_ONLY___ [core]
+disable_usage_reporting = True
+
+2022-08-19 11:05:03,074 INFO     ___FILE_ONLY___ 
+Your active configuration is: [default]
+

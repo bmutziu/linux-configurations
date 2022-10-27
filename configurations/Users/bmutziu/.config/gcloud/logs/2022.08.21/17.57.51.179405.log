@@ -1,0 +1,12 @@
+2022-08-21 17:57:51,186 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-21 17:57:51,187 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2022-08-21 17:57:51,188 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets']
+2022-08-21 17:57:51,192 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets', 'delete']
+2022-08-21 17:57:51,193 DEBUG    root            Running [gcloud.compute.networks.subnets.delete] with arguments: [NAME:1: "['bmutziu-14804-node-subnet']"]
+2022-08-21 17:57:51,257 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-21 17:57:52,767 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-21 17:58:00,198 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

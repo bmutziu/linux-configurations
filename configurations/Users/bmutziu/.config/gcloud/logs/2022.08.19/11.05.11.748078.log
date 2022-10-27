@@ -1,0 +1,11 @@
+2022-08-19 11:05:11,748 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 11:05:11,749 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2022-08-19 11:05:11,749 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'delete']
+2022-08-19 11:05:11,750 DEBUG    root            Running [gcloud.config.configurations.delete] with arguments: [CONFIGURATION_NAMES:1: "['cilium']"]
+2022-08-19 11:05:11,750 INFO     ___FILE_ONLY___ The following configurations will be deleted:
+
+2022-08-19 11:05:11,750 INFO     ___FILE_ONLY___  - cilium
+
+2022-08-19 11:05:12,937 INFO     ___FILE_ONLY___ Deleted [cilium].
+
+2022-08-19 11:05:12,938 INFO     root            Display format: "none"

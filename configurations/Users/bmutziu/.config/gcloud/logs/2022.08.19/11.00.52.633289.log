@@ -1,0 +1,300 @@
+2022-08-19 11:00:52,633 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 11:00:52,635 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2022-08-19 11:00:52,635 DEBUG    root            Running [gcloud.config.list] with arguments: [--all: "True"]
+2022-08-19 11:00:52,636 INFO     root            Display format: "config"
+2022-08-19 11:00:52,637 INFO     ___FILE_ONLY___ [accessibility]
+screen_reader (unset)
+[ai]
+region (unset)
+[ai_platform]
+region (unset)
+[api_endpoint_overrides]
+accessapproval (unset)
+accesscontextmanager (unset)
+ai (unset)
+aiplatform (unset)
+anthosevents (unset)
+apigateway (unset)
+apigee (unset)
+appengine (unset)
+artifactregistry (unset)
+assuredworkloads (unset)
+baremetalsolution (unset)
+bigtableadmin (unset)
+certificatemanager (unset)
+cloudasset (unset)
+cloudbilling (unset)
+cloudbuild (unset)
+cloudcommerceconsumerprocurement (unset)
+clouddebugger (unset)
+clouddeploy (unset)
+clouderrorreporting (unset)
+cloudfunctions (unset)
+cloudidentity (unset)
+cloudiot (unset)
+cloudkms (unset)
+cloudresourcemanager (unset)
+cloudscheduler (unset)
+cloudtasks (unset)
+cloudtrace (unset)
+composer (unset)
+compute (unset)
+config (unset)
+container (unset)
+datacatalog (unset)
+dataflow (unset)
+datafusion (unset)
+datamigration (unset)
+datapipelines (unset)
+dataplex (unset)
+dataproc (unset)
+datastore (unset)
+datastream (unset)
+deploymentmanager (unset)
+dns (unset)
+domains (unset)
+edgecontainer (unset)
+eventarc (unset)
+eventarcpublishing (unset)
+events (unset)
+file (unset)
+firestore (unset)
+gameservices (unset)
+genomics (unset)
+gkemulticloud (unset)
+healthcare (unset)
+iam (unset)
+iap (unset)
+ids (unset)
+language (unset)
+lifesciences (unset)
+logging (unset)
+managedidentities (unset)
+mediaasset (unset)
+memcache (unset)
+metastore (unset)
+monitoring (unset)
+networkconnectivity (unset)
+networkmanagement (unset)
+networksecurity (unset)
+networkservices (unset)
+notebooks (unset)
+orgpolicy (unset)
+policyanalyzer (unset)
+privateca (unset)
+publicca (unset)
+pubsub (unset)
+recaptchaenterprise (unset)
+recommender (unset)
+redis (unset)
+resourcesettings (unset)
+run (unset)
+runtimeconfig (unset)
+sddc (unset)
+secretmanager (unset)
+securitycenter (unset)
+servicedirectory (unset)
+servicemanagement (unset)
+sourcerepo (unset)
+spanner (unset)
+speech (unset)
+sql (unset)
+storage (unset)
+testing (unset)
+vision (unset)
+vmwareengine (unset)
+workflowexecutions (unset)
+workflows (unset)
+[app]
+cloud_build_timeout (unset)
+promote_by_default (unset)
+stop_previous_version (unset)
+use_runtime_builders (unset)
+[artifacts]
+location (unset)
+repository (unset)
+[auth]
+access_token_file (unset)
+disable_credentials (unset)
+impersonate_service_account (unset)
+token_host (unset)
+[billing]
+quota_project (unset)
+[builds]
+kaniko_cache_ttl (unset)
+region (unset)
+timeout (unset)
+use_kaniko (unset)
+[component_manager]
+additional_repositories (unset)
+disable_update_check (unset)
+[composer]
+location (unset)
+[compute]
+image_family_scope (unset)
+region (unset)
+use_new_list_usable_subnets_api (unset)
+zone (unset)
+[container]
+build_timeout (unset)
+cluster (unset)
+use_application_default_credentials (unset)
+use_client_certificate (unset)
+[container_aws]
+location (unset)
+[container_azure]
+location (unset)
+[container_vmware]
+location (unset)
+[context_aware]
+use_client_certificate (unset)
+[core]
+account = bmutziu@gmail.com
+console_log_format (unset)
+custom_ca_certs_file (unset)
+default_regional_backend_service (unset)
+disable_color (unset)
+disable_file_logging (unset)
+disable_prompts (unset)
+disable_usage_reporting = True
+enable_feature_flags (unset)
+log_http (unset)
+max_log_days (unset)
+pass_credentials_to_gsutil (unset)
+project = devops-cp-ssrc
+show_structured_logs (unset)
+trace_token (unset)
+user_output_enabled (unset)
+verbosity (unset)
+[dataflow]
+disable_public_ips (unset)
+enable_streaming_engine (unset)
+print_only (unset)
+[datafusion]
+location (unset)
+[datapipelines]
+disable_public_ips (unset)
+enable_streaming_engine (unset)
+[dataplex]
+asset (unset)
+lake (unset)
+location (unset)
+zone (unset)
+[dataproc]
+location (unset)
+region (unset)
+[deploy]
+delivery_pipeline (unset)
+region (unset)
+[deployment_manager]
+glob_imports (unset)
+[eventarc]
+location (unset)
+[filestore]
+location (unset)
+region (unset)
+zone (unset)
+[functions]
+gen2 (unset)
+region (unset)
+[game_services]
+default_deployment (unset)
+default_realm (unset)
+location (unset)
+[gcloudignore]
+enabled (unset)
+[gkebackup]
+backup (unset)
+backup_plan (unset)
+location (unset)
+restore (unset)
+restore_plan (unset)
+[healthcare]
+dataset (unset)
+location (unset)
+[interactive]
+bottom_bindings_line (unset)
+bottom_status_line (unset)
+completion_menu_lines (unset)
+context (unset)
+fixed_prompt_position (unset)
+help_lines (unset)
+hidden (unset)
+justify_bottom_lines (unset)
+manpage_generator (unset)
+multi_column_completion_menu (unset)
+prompt (unset)
+show_help (unset)
+suggest (unset)
+[lifesciences]
+location (unset)
+[media_asset]
+location (unset)
+[memcache]
+region (unset)
+[metastore]
+location (unset)
+tier (unset)
+[ml_engine]
+local_python (unset)
+polling_interval (unset)
+[notebooks]
+location (unset)
+[privateca]
+location (unset)
+[proxy]
+address (unset)
+password (unset)
+port (unset)
+rdns (unset)
+type (unset)
+username (unset)
+[redis]
+region (unset)
+[run]
+cluster (unset)
+cluster_location (unset)
+platform (unset)
+region (unset)
+[scc]
+organization (unset)
+parent (unset)
+[secrets]
+locations (unset)
+replication-policy (unset)
+[spanner]
+instance (unset)
+[ssh]
+putty_force_connect (unset)
+verify_internal_ip (unset)
+[storage]
+base_retry_delay (unset)
+check_hashes (unset)
+convert_incompatible_windows_path_characters (unset)
+copy_chunk_size (unset)
+download_chunk_size (unset)
+exponential_sleep_multiplier (unset)
+max_retries (unset)
+max_retry_delay (unset)
+parallel_composite_upload_component_size (unset)
+parallel_composite_upload_threshold (unset)
+process_count (unset)
+resumable_threshold (unset)
+s3_endpoint_url (unset)
+sliced_object_download_component_size (unset)
+sliced_object_download_max_components (unset)
+sliced_object_download_threshold (unset)
+thread_count (unset)
+tracker_files_directory (unset)
+upload_chunk_size (unset)
+use_gsutil (unset)
+use_magicfile (unset)
+use_threading_local (unset)
+[survey]
+disable_prompts (unset)
+[vmware]
+region (unset)
+
+2022-08-19 11:00:52,637 INFO     ___FILE_ONLY___ 
+Your active configuration is: [default]
+

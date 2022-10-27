@@ -1,9 +1,0 @@
-[Common]
-ShadowSize=ShadowVeryLarge
-
-[Style]
-MenuOpacity=74
-MnemonicsMode=MN_NEVER
-SplitterProxyEnabled=false
-ToolBarDrawItemSeparator=false
-ViewDrawFocusIndicator=false

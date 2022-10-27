@@ -1,0 +1,29 @@
+2022-08-30 14:39:39,301 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-30 14:39:39,303 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2022-08-30 14:39:39,303 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2022-08-30 14:39:39,311 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2022-08-30 14:39:39,622 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-08-30 14:39:40,044 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-08-30 14:39:40,049 INFO     root            Display format: "default json"
+2022-08-30 14:39:40,049 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "bmutziu@gmail.com",
+        "disable_usage_reporting": "True",
+        "project": "cilium-20220820000618"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AVA9y1s-anD2i757nG01AyXKLCfkbxe4Ugf9BiLgBOjMYAauYKiMhSSAVP1V-xLXFIqJO-bVo8Fw99Esjb5GpEQZYjETjryjgylmseKAvTHT7KXrN1SqDIVrVZexKKX7yL9faXImiMm6O6iitovUVZWX6M2z6ug6GzxsxgaCgYKATASAQASFQE65dr8HjMQvnaJU0zM8ynbB65nIQ0173",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjQwMmYzMDViNzA1ODEzMjlmZjI4OWI1YjNhNjcyODM4MDZlY2E4OTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAwODI0ODY0NDMxNzM0OTUyNjI1IiwiZW1haWwiOiJibXV0eml1QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoidDBoWEd3RkhQYzB6VkJGdFZnUmdsdyIsImlhdCI6MTY2MTg1OTU4MCwiZXhwIjoxNjYxODYzMTgwfQ.iKNwDTSLW9q3tQVedrW7_L47_t-C8fnTVSTglCM0ASfRDQD0x83fTZQAtujsgZcON1P2U9hZ0ZXP7Dhp2V1RY4O2ymOXViiodOd8MA7_jZIwcylw3fI7Zwe-OkN3jhSRncDx9tV3KGbTqMz1b7aLZ-8LbuqZnxU5djDBu48rIzww_dMqIHXSup6w4cIfYShqroOzCcFq7uzaB7mH8-ddENWEsIsSgQi3TAW3_VRVXTvMI2XAcGpwFhKihvz0sC54kJ-iuBjPjO5__qCnqjBm3b-RzmXW0KaVzKPyWvM9fQXa4A-ZUk3siwEYdEdQZVTMPNMrkQZArZH6JjVb81SUtQ",
+    "token_expiry": "2022-08-30T12:39:39Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/bmutziu/.config/gcloud/config_sentinel"
+  }
+}
+2022-08-30 14:39:40,049 INFO     ___FILE_ONLY___ 
+

@@ -1,0 +1,43 @@
+2022-08-20 13:51:56,294 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-08-20 13:51:56,295 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-08-20 13:51:56,304 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--zone: "europe-central2-aeurope-north1-a", NAME: "bmutziu-16662"]
+2022-08-20 13:51:56,306 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-08-20 13:51:56,393 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-08-20 13:51:56,735 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/cilium-20220820000618/locations/europe-central2-aeurope-north1-a/clusters/bmutziu-16662?alt=json HTTP/1.1" 400 None
+2022-08-20 13:51:56,741 DEBUG    root            (gcloud.container.clusters.get-credentials) ResponseError: code=400, message=Location "europe-central2-aeurope-north1-a" does not exist.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1315, in GetCluster
+    return self.client.projects_locations_clusters.Get(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/third_party/apis/container/v1/container_v1_client.py", line 547, in Get
+    return self._RunMethod(
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://container.googleapis.com/v1/projects/cilium-20220820000618/locations/europe-central2-aeurope-north1-a/clusters/bmutziu-16662?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 20 Aug 2022 10:51:56 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Location \"europe-central2-aeurope-north1-a\" does not exist.",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/get_credentials.py", line 113, in Run
+    cluster, cluster_ref = _BaseRun(args, self.context)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/container/clusters/get_credentials.py", line 41, in _BaseRun
+    cluster = adapter.GetCluster(cluster_ref)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1324, in GetCluster
+    raise exceptions.HttpException(error, util.HTTP_ERROR_FORMAT)
+googlecloudsdk.calliope.exceptions.HttpException: ResponseError: code=400, message=Location "europe-central2-aeurope-north1-a" does not exist.
+2022-08-20 13:51:56,744 ERROR    root            (gcloud.container.clusters.get-credentials) ResponseError: code=400, message=Location "europe-central2-aeurope-north1-a" does not exist.

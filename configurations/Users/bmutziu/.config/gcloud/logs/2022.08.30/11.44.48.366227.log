@@ -1,0 +1,76 @@
+2022-08-30 11:44:48,376 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2022-08-30 11:44:48,377 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2022-08-30 11:44:48,380 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'create']
+2022-08-30 11:44:48,381 DEBUG    root            Running [gcloud.compute.networks.create] with arguments: [--subnet-mode: "custom", NAME: "bmutziu-1667-cluster-net"]
+2022-08-30 11:44:48,584 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-30 11:44:49,839 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-30 11:44:49,840 DEBUG    root            Operations to inspect: [<Operation
+ id: 8996696933307281646
+ insertTime: '2022-08-30T01:44:49.498-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661849089044-5e771649f6e66-6688dd38-12425aae'
+ operationType: 'insert'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661849089044-5e771649f6e66-6688dd38-12425aae'
+ startTime: '2022-08-30T01:44:49.508-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 3686157261226406126
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/networks/bmutziu-1667-cluster-net'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-30 11:44:49,842 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-30 11:45:01,919 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-30 11:45:01,920 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2022-08-30T01:45:01.730-07:00'
+ id: 8996696933307281646
+ insertTime: '2022-08-30T01:44:49.498-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1661849089044-5e771649f6e66-6688dd38-12425aae'
+ operationType: 'insert'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/operations/operation-1661849089044-5e771649f6e66-6688dd38-12425aae'
+ startTime: '2022-08-30T01:44:49.508-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 3686157261226406126
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/networks/bmutziu-1667-cluster-net'
+ user: 'bmutziu@gmail.com'
+ warnings: []>]
+2022-08-30 11:45:01,920 INFO     ___FILE_ONLY___ Created [https://www.googleapis.com/compute/v1/projects/cilium-20220820000618/global/networks/bmutziu-1667-cluster-net].
+
+2022-08-30 11:45:01,922 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2022-08-30 11:45:02,535 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2022-08-30 11:45:02,536 INFO     root            Display format: "    table(
+      name,
+      x_gcloud_subnet_mode:label=SUBNET_MODE,
+      x_gcloud_bgp_routing_mode:label=BGP_ROUTING_MODE,
+      IPv4Range:label=IPV4_RANGE,
+      gatewayIPv4
+    )"
+2022-08-30 11:45:02,539 INFO     root            cache collection=compute.networks api_version=v1 params=['project', 'network']
+2022-08-30 11:45:02,555 INFO     ___FILE_ONLY___ NAME
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___                       
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ SUBNET_MODE
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___   
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ BGP_ROUTING_MODE
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___   
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ IPV4_RANGE
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___   
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ GATEWAY_IPV4
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ 
+
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ bmutziu-1667-cluster-net
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___   
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ CUSTOM
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___        
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ REGIONAL
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ 
+
+2022-08-30 11:45:02,556 INFO     ___FILE_ONLY___ 
+Instances on this network will not be reachable until firewall rules
+are created. As an example, you can allow all internal traffic between
+instances as well as SSH, RDP, and ICMP by running:
+
+$ gcloud compute firewall-rules create <FIREWALL_NAME> --network bmutziu-1667-cluster-net --allow tcp,udp,icmp --source-ranges <IP_RANGE>
+$ gcloud compute firewall-rules create <FIREWALL_NAME> --network bmutziu-1667-cluster-net --allow tcp:22,tcp:3389,icmp
+
+

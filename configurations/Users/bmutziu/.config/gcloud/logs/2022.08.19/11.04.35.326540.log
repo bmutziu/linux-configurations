@@ -1,0 +1,16 @@
+2022-08-19 11:04:35,327 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-08-19 11:04:35,327 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2022-08-19 11:04:35,329 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'rename']
+2022-08-19 11:04:35,330 DEBUG    root            Running [gcloud.config.configurations.rename] with arguments: [--new-name: "default", CONFIGURATION_NAME: "cilium"]
+2022-08-19 11:04:35,330 DEBUG    root            (gcloud.config.configurations.rename) Cannot rename configuration [cilium], it is the currently active configuration.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/surface/config/configurations/rename.py", line 59, in Run
+    named_configs.ConfigurationStore.RenameConfig(args.configuration_name,
+  File "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/lib/googlecloudsdk/core/configurations/named_configs.py", line 348, in RenameConfig
+    raise NamedConfigError(
+googlecloudsdk.core.configurations.named_configs.NamedConfigError: Cannot rename configuration [cilium], it is the currently active configuration.
+2022-08-19 11:04:35,331 ERROR    root            (gcloud.config.configurations.rename) Cannot rename configuration [cilium], it is the currently active configuration.
